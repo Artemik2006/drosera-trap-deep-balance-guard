@@ -69,3 +69,16 @@ contract TriggerSignalVault {
         emit Alert(message);
     }
 }
+
+
+🚀 Деплой
+forge create src/DeepBalanceGuard.sol:DeepBalanceGuard \
+  --rpc-url https://ethereum-hoodi-rpc.publicnode.com \
+  --private-key 0x...
+
+forge create src/TriggerSignalVault.sol:TriggerSignalVault \
+  --rpc-url https://ethereum-hoodi-rpc.publicnode.com \
+  --private-key 0x...
+
+Применить конфигурацию:
+DROSERA_PRIVATE_KEY=0x... drosera apply
