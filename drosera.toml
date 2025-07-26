@@ -1,0 +1,18 @@
+ethereum_rpc = "https://rpc.ankr.com/eth_hoodi/e565cc832cd5ee19fc9628"
+drosera_rpc = "https://relay.hoodi.drosera.io"
+eth_chain_id = 560048
+drosera_address = "0x91cB447BaFc6e0EA0F4Fe056F5a9b1F14bb06e5D"
+
+[traps]
+
+[traps.deep_balance_guard]
+path = "out/DeepBalanceGuard.sol/DeepBalanceGuard.json"
+response_contract = "0xA20A3C0a6F022212E432f59DC24a02CC8cE3B25C"
+response_function = "logAnomaly"
+block_sample_size = 10
+cooldown_period_blocks = 1
+min_number_of_operators = 1
+max_number_of_operators = 2
+private_trap = true
+whitelist = ["0xDB34AAaA0a0495Dc47C4898391d4D9cF6957d0F1"]
+address = "0xd9DAA8c3CC97ACfAB8001A24A99649eFfF135fED"
