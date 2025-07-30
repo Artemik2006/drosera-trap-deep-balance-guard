@@ -7,7 +7,7 @@ drosera_address = "0x91cB447BaFc6e0EA0F4Fe056F5a9b1F14bb06e5D"
 
 [traps.deep_balance_guard]
 path = "out/DeepBalanceGuard.sol/DeepBalanceGuard.json"
-response_contract = "0xA20A3C0a6F022212E432f59DC24a02CC8cE3B25C"
+response_contract = "0x7f91552D9d793d22b9135723FFcbF211BEAEF5c1"
 response_function = "logAnomaly"
 block_sample_size = 10
 cooldown_period_blocks = 1
