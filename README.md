@@ -38,8 +38,8 @@ function logAnomaly(string calldata message) external
 pragma solidity ^0.8.20;
 
 interface ITrap {
-    function collect() external returns (bytes memory);
-    function shouldRespond(bytes[] calldata data) external view returns (bool, bytes memory);
+    function collect() external view  returns (bytes memory);
+    function shouldRespond(bytes[] calldata data) external pure returns (bool, bytes memory);
 }
 
 contract DeepBalanceGuard is ITrap {
